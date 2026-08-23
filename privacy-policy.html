@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính Sách Bảo Mật (Privacy Policy) - Phương Việt Group</title>
+  <meta name="description" content="Chính sách bảo mật thông tin và dữ liệu người dùng của Công ty TNHH Phương Việt Group. Đảm bảo tuân thủ tiêu chuẩn xác minh Google Play Console." />
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* ==================== RESET & VARIABLES ==================== */
+    :root {
+      --primary: #0ea5e9;         /* Ice Blue */
+      --primary-dark: #0284c7;    /* Deep Blue */
+      --primary-light: #38bdf8;   /* Light Sky Blue */
+      --secondary: #0f172a;       /* Dark Navy */
+      --accent: #10b981;          /* Emerald Green (Eco/Food Safe) */
+      --dark-card: #1e293b;
+      --text-main: #334155;
+      --text-muted: #64748b;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --bg-ice: rgba(240, 249, 255, 0.75);
+      --border-color: #e2e8f0;
+      --shadow-sm: 0 4px 6px -1px rgba(14, 165, 233, 0.05);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+      --shadow-lg: 0 20px 35px -5px rgba(14, 165, 233, 0.12);
+      --radius-sm: 8px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Scrollbar Style */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary-light);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--primary-dark);
+    }
+
+    /* ==================== BUTTONS ==================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 30px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      transition: var(--transition);
+      z-index: -1;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      box-shadow: 0 8px 24px -4px rgba(14, 165, 233, 0.4);
+    }
+    .btn-primary::before {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px -4px rgba(14, 165, 233, 0.55);
+      color: #fff;
+    }
+    .btn-primary:hover::before {
+      width: 100%;
+    }
+
+    /* ==================== HEADER & NAVBAR ==================== */
+    .top-bar {
+      background: #090f1e;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .top-info {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .top-info span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .top-info i {
+      color: var(--primary);
+    }
+
+    .top-social {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .top-social a {
+      color: #94a3b8;
+    }
+    .top-social a:hover {
+      color: var(--primary);
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+      transition: var(--transition);
+    }
+    .header.scrolled {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow-md);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 85px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--secondary);
+      letter-spacing: -0.5px;
+    }
+
+    .brand-logo .logo-container {
+      width: 48px;
+      height: 48px;
+      background: #fff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 10px rgba(14, 165, 233, 0.1);
+    }
+    .brand-logo .logo-container img {
+      max-height: 38px;
+      object-fit: contain;
+    }
+
+    .brand-logo span {
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      color: var(--secondary);
+      font-size: 0.95rem;
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 99px;
+      background: var(--primary-dark);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-dark);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: var(--secondary);
+      transition: var(--transition);
+    }
+    .nav-toggle:hover {
+      color: var(--primary-dark);
+    }
+
+    /* ==================== PRIVACY POLICY CONTENT SECTION ==================== */
+    .privacy-header {
+      background: linear-gradient(135deg, #020617 0%, #0b1e36 50%, #030712 100%);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+      position: relative;
+    }
+    .privacy-header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .privacy-header h1 span {
+      background: linear-gradient(90deg, #38bdf8, #0ea5e9, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .privacy-section {
+      padding: 60px 0 100px;
+      background: var(--bg-light);
+    }
+    
+    .privacy-card {
+      background: #ffffff;
+      padding: 45px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .lang-switcher-container {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 35px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 20px;
+    }
+
+    .lang-btn {
+      padding: 10px 22px;
+      border-radius: 99px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--primary-dark);
+      color: #ffffff;
+      border-color: var(--primary-dark);
+      box-shadow: 0 6px 16px rgba(14, 165, 233, 0.25);
+    }
+
+    .privacy-body {
+      font-size: 0.98rem;
+      color: var(--text-main);
+    }
+
+    .privacy-body h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-top: 35px;
+      margin-bottom: 15px;
+      border-left: 4px solid var(--primary-dark);
+      padding-left: 14px;
+      line-height: 1.3;
+    }
+
+    .privacy-body p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .privacy-body ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      list-style: disc;
+    }
+
+    .privacy-body ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .privacy-body a {
+      color: var(--primary-dark);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .privacy-body a:hover {
+      color: var(--primary);
+    }
+
+    .meta-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: -10px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .meta-info span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-info i {
+      color: var(--primary-dark);
+    }
+
+    .contact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    .contact-table th, .contact-table td {
+      border: 1px solid var(--border-color);
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    .contact-table th {
+      background-color: var(--bg-light);
+      font-weight: 700;
+      color: var(--secondary);
+      width: 30%;
+    }
+
+    .contact-table td {
+      color: var(--text-main);
+    }
+
+    /* Hide language content classes */
+    .lang-content {
+      display: none;
+    }
+    
+    .lang-content.active {
+      display: block;
+    }
+
+    /* ==================== FOOTER ==================== */
+    .footer {
+      background: #080d1a;
+      color: #94a3b8;
+      padding: 80px 0 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.25fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-col h5 {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 14px;
+    }
+
+    .footer-col ul a {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    .footer-col ul a:hover {
+      color: #fff;
+      padding-left: 6px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 30px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* ==================== CLIENT WIDGET (ZALO & PHONE BAR) ==================== */
+    .contact-widget-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .widget-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+      transition: var(--transition);
+      position: relative;
+      cursor: pointer;
+    }
+    .widget-btn:hover {
+      transform: scale(1.1);
+    }
+    .widget-btn.zalo {
+      background: #0068ff;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .widget-btn.phone {
+      background: var(--accent);
+      animation: pulsePhone 2s infinite;
+    }
+    .widget-btn span {
+      position: absolute;
+      right: 68px;
+      background: var(--secondary);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(10px);
+      pointer-events: none;
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .widget-btn:hover span {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @keyframes pulsePhone {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    /* Sticky Bottom Bar for Mobile */
+    .mobile-bottom-bar {
+      display: none;
+    }
+
+    /* ==================== RESPONSIVE DESIGN ==================== */
+    @media (max-width: 992px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .privacy-card {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 30px 24px;
+        box-shadow: var(--shadow-md);
+        border-bottom: 2px solid var(--border-color);
+        gap: 20px;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-toggle {
+        display: block;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .privacy-header h1 {
+        font-size: 2rem;
+      }
+
+      /* Native feeling bottom sticky bar for mobile */
+      .contact-widget-container {
+        display: none;
+      }
+      .mobile-bottom-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        border-top: 1px solid #e2e8f0;
+        box-shadow: 0 -4px 15px rgba(0,0,0,0.06);
+        z-index: 1000;
+        padding: 8px;
+        gap: 8px;
+        padding-bottom: calc(8px + env(safe-area-inset-bottom));
+      }
+      .mobile-bottom-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        color: var(--secondary);
+        font-weight: 700;
+        font-size: 0.68rem;
+        text-align: center;
+        min-height: 52px;
+        border-radius: 12px;
+        background: #ffffff;
+        border: 1px solid #f1f5f9;
+        transition: var(--transition);
+      }
+      .mobile-bottom-btn.phone-btn {
+        color: var(--accent);
+        border-color: rgba(16, 185, 129, 0.15);
+        background: rgba(16, 185, 129, 0.02);
+      }
+      .mobile-bottom-btn.zalo-btn {
+        color: #0068ff;
+        border-color: rgba(0, 104, 255, 0.15);
+        background: rgba(0, 104, 255, 0.02);
+      }
+      .mobile-bottom-btn i {
+        font-size: 1.25rem;
+      }
+      body {
+        padding-bottom: 75px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-info">
+        <span><i class="fa-solid fa-phone"></i> Hotline Đà Nẵng: (0236) 3771 789 / 0924.711.789</span>
+        <span><i class="fa-solid fa-location-dot"></i> Trụ sở chính: 242/17 Điện Biên Phủ, Q. Thanh Khê, Đà Nẵng</span>
+      </div>
+      <div class="top-social">
+        <a href="https://www.facebook.com/pvgroup/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://zalo.me/0924711789" target="_blank" title="Zalo"><i class="fa-solid fa-comment-dots"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="mainHeader">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-container">
+          <img src="https://logo.trangvangvietnam.com/L39577145700.gif" alt="Phương Việt Group Logo">
+        </div>
+        PHƯƠNG VIỆT <span>GROUP</span>
+      </a>
+      
+      <nav class="nav-links" id="navMenu">
+        <a href="index.html#about">Về chúng tôi</a>
+        <a href="index.html#products">Sản phẩm</a>
+        <a href="index.html#solutions">Ứng dụng</a>
+        <a href="index.html#why-us">Thế mạnh</a>
+        <a href="index.html#contact">Liên hệ</a>
+        <a href="index.html#contact" class="btn btn-primary" style="padding: 10px 20px; color: #fff;">Nhận báo giá</a>
+      </nav>
+
+      <div class="nav-toggle" id="navToggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Header -->
+  <section class="privacy-header">
+    <div class="container">
+      <h1 id="privacyTitle">Chính Sách <span>Bảo Mật</span></h1>
+      <p id="privacySubtitle">Privacy Policy - Phuong Viet Group</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="privacy-section">
+    <div class="container">
+      <div class="privacy-card">
+        
+        <!-- Language Switcher Tabs -->
+        <div class="lang-switcher-container">
+          <button class="lang-btn active" onclick="switchLanguage('vi')">
+            <span class="flag-icon"><i class="fa-solid fa-flag" style="color: #da251d;"></i></span> Tiếng Việt
+          </button>
+          <button class="lang-btn" onclick="switchLanguage('en')">
+            <span class="flag-icon"><i class="fa-solid fa-flag" style="color: #00247d;"></i></span> English
+          </button>
+        </div>
+
+        <div class="privacy-body">
+          
+          <!-- VIETNAMESE CONTENT -->
+          <div id="content-vi" class="lang-content active">
+            <div class="meta-info">
+              <span><i class="fa-solid fa-calendar-days"></i> Cập nhật lần cuối: 23/08/2026</span>
+              <span><i class="fa-solid fa-shield-halved"></i> Trạng thái: Có hiệu lực</span>
+            </div>
+
+            <h2>1. Giới thiệu</h2>
+            <p><strong>CÔNG TY TNHH PHƯƠNG VIỆT GROUP</strong> ("chúng tôi", "Phương Việt Group" hoặc "pháp nhân chủ quản") cam kết bảo vệ quyền riêng tư và thông tin cá nhân của người dùng khi sử dụng trang web, ứng dụng di động và các dịch vụ giữ lạnh chuyên nghiệp của chúng tôi. Chính sách Bảo mật này mô tả cách thức chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ dữ liệu cá nhân của bạn, đồng thời nêu rõ các quyền lợi của bạn liên quan đến dữ liệu của chính mình nhằm đáp ứng đầy đủ tiêu chuẩn xác minh tài khoản tổ chức (Organization Account) và chính sách dữ liệu của Google Play Console.</p>
+            <p>Bằng việc cài đặt ứng dụng hoặc sử dụng các dịch vụ của chúng tôi, bạn đồng ý với các điều khoản thu thập dữ liệu được nêu trong Chính sách Bảo mật này.</p>
+
+            <h2>2. Thu thập và Sử dụng Thông tin</h2>
+            <p>Chúng tôi có thể thu thập các loại thông tin sau từ người dùng để duy trì, cải thiện và cung cấp dịch vụ tốt hơn:</p>
+            <ul>
+              <li><strong>Thông tin do người dùng cung cấp:</strong> Khi bạn đăng ký tư vấn, liên hệ sỉ lẻ hoặc yêu cầu báo giá trên trang web/ứng dụng, chúng tôi có thể yêu cầu bạn cung cấp thông tin liên hệ trực tiếp bao gồm: Họ tên, Số điện thoại di động, Địa chỉ email và Nội dung nhu cầu sản phẩm (ví dụ: loại đá gel, đá khô hoặc máy phun đá khô).</li>
+              <li><strong>Dữ liệu thiết bị và sử dụng (Thu thập tự động):</strong> Khi bạn chạy ứng dụng di động của chúng tôi, hệ thống có thể tự động ghi nhận một số thông tin kỹ thuật không mang tính chất định danh cá nhân trực tiếp bao gồm:
+                <ul>
+                  <li>Dòng máy và mẫu thiết bị phần cứng (Device model).</li>
+                  <li>Phiên bản hệ điều hành (OS version).</li>
+                  <li>Địa chỉ giao thức Internet (IP address).</li>
+                  <li>Mã định danh quảng cáo của Google (Google Advertising ID - AAID) nhằm tối ưu hóa hiển thị hoặc đo lường.</li>
+                  <li>Nhật ký lỗi ứng dụng (Crash logs) và số liệu thống kê hiệu năng để phục vụ công tác gỡ lỗi phần mềm.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h2>3. Nhà cung cấp Dịch vụ Bên thứ ba</h2>
+            <p>Chúng tôi có thể hợp tác với các nhà cung cấp dịch vụ công nghệ bên thứ ba để vận hành ứng dụng và phân tích hiệu suất dịch vụ tốt hơn. Các đối tác này có quyền truy cập vào thông tin thiết bị của bạn theo đúng mục đích vận hành kỹ thuật được ủy quyền và cam kết bảo vệ thông tin đó phù hợp với chính sách bảo mật riêng của họ. Các dịch vụ bên thứ ba được sử dụng bao gồm:</p>
+            <ul>
+              <li><strong>Google Play Services:</strong> Dùng để cung cấp các dịch vụ nền tảng Android. <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Xem Chính sách Bảo mật Google Play Services</a></li>
+              <li><strong>AdMob (Dịch vụ Quảng cáo Google):</strong> Dùng để phân phối quảng cáo trong ứng dụng. <br><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Xem Chính sách Bảo mật AdMob</a></li>
+              <li><strong>Google Analytics for Firebase / Firebase Crashlytics:</strong> Dùng để đo lường hành vi ứng dụng và báo cáo lỗi phát sinh tự động. <br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Xem Chính sách Bảo mật Firebase</a></li>
+            </ul>
+
+            <h2>4. Dữ liệu Nhật ký & Cookies</h2>
+            <p><strong>Log Data (Dữ liệu nhật ký):</strong> Mỗi khi bạn sử dụng dịch vụ của chúng tôi, trong trường hợp ứng dụng gặp lỗi hệ thống, chúng tôi sẽ thu thập dữ liệu và thông tin trên điện thoại của bạn (thông qua các công cụ của bên thứ ba) gọi là Dữ liệu Nhật ký. Dữ liệu này bao gồm thông tin như địa chỉ IP thiết bị của bạn, tên thiết bị, phiên bản hệ điều hành, cấu hình của ứng dụng khi sử dụng dịch vụ của chúng tôi, thời gian và ngày bạn sử dụng dịch vụ cũng như các số liệu thống kê lỗi chi tiết khác.</p>
+            <p><strong>Cookies:</strong> Cookies là các tệp nhỏ chứa lượng dữ liệu ẩn danh định danh duy nhất được gửi tới trình duyệt của bạn từ trang web và được lưu trữ trên bộ nhớ trong của thiết bị. Các ứng dụng của chúng tôi không sử dụng các cookies này một cách trực tiếp. Tuy nhiên, mã nguồn bên thứ ba được tích hợp có thể sử dụng "cookies" để thu thập thông tin hoạt động nhằm cải thiện chất lượng dịch vụ.</p>
+
+            <h2>5. Chính sách Xóa Dữ liệu (Data Deletion Policy)</h2>
+            <p>Để đảm bảo tuân thủ nghiêm ngặt quy định bảo vệ dữ liệu người dùng của Google Play Store, chúng tôi cung cấp quyền tự quyết và yêu cầu xóa dữ liệu cá nhân một cách rõ ràng cho tất cả người dùng:</p>
+            <ul>
+              <li>Nếu bạn muốn yêu cầu xóa toàn bộ thông tin cá nhân (như họ tên, số điện thoại, email) hoặc dữ liệu thiết bị liên quan đã được thu thập trong quá trình sử dụng dịch vụ của chúng tôi, vui lòng gửi yêu cầu bằng văn bản qua email hỗ trợ chính thức: <a href="mailto:pvgroup79@gmail.com"><strong>pvgroup79@gmail.com</strong></a>.</li>
+              <li>Chúng tôi cam kết tiếp nhận, xác minh thông tin chủ sở hữu tài khoản và thực hiện xóa vĩnh viễn dữ liệu khỏi hệ thống máy chủ của chúng tôi, đồng thời gửi phản hồi xác nhận hoàn tất quy trình xóa dữ liệu cho bạn <strong>trong vòng tối đa 30 ngày</strong> kể từ khi nhận được yêu cầu.</li>
+            </ul>
+
+            <h2>6. Quyền riêng tư của Trẻ em</h2>
+            <p>Chúng tôi tuân thủ nghiêm ngặt Đạo luật Bảo vệ Quyền riêng tư Trực tuyến của Trẻ em (COPPA). Các dịch vụ của chúng tôi không hướng tới đối tượng trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin định danh cá nhân của trẻ em dưới 13 tuổi. Trong trường hợp phát hiện ra rằng trẻ em dưới 13 tuổi đã cung cấp thông tin cá nhân cho chúng tôi mà không có sự đồng ý của phụ huynh, chúng tôi sẽ tiến hành xóa bỏ dữ liệu đó ngay lập tức khỏi hệ thống máy chủ. Nếu bạn là cha mẹ hoặc người giám hộ hợp pháp và phát hiện con mình đã cung cấp thông tin cho chúng tôi, vui lòng liên hệ ngay để chúng tôi tiến hành xử lý kịp thời.</p>
+
+            <h2>7. Bảo mật và Lưu trữ Dữ liệu</h2>
+            <p>Chúng tôi rất trân trọng sự tin tưởng của bạn khi cung cấp thông tin cho chúng tôi. Do đó, chúng tôi luôn nỗ lực thực hiện các biện pháp bảo mật kỹ thuật và tổ chức được chấp nhận về mặt thương mại nhằm mã hóa dữ liệu truyền tải và lưu trữ an toàn chống truy cập trái phép. Tuy nhiên, xin lưu ý rằng không có phương pháp truyền tải thông tin qua internet hoặc phương pháp lưu trữ điện tử nào là an toàn tuyệt đối 100%, vì vậy chúng tôi không thể cam kết bảo mật tuyệt đối.</p>
+
+            <h2>8. Thay đổi đối với Chính sách Bảo mật này</h2>
+            <p>Chúng tôi có thể cập nhật nội dung Chính sách Bảo mật này tùy từng thời điểm theo sự thay đổi của pháp luật hoặc cập nhật tính năng dịch vụ. Quý khách hàng nên định kỳ truy cập trang này để theo dõi các điều chỉnh mới nhất. Mọi sự thay đổi sẽ được đăng trực tiếp tại đây và có hiệu lực ngay lập tức kể từ ngày ghi trên tiêu đề.</p>
+
+            <h2>9. Liên hệ với chúng tôi</h2>
+            <p>Nếu bạn có bất kỳ câu hỏi, góp ý nào liên quan đến Chính sách Bảo mật này hoặc có yêu cầu giải quyết quyền riêng tư dữ liệu cá nhân, vui lòng liên hệ trực tiếp với Phương Việt Group qua thông tin pháp nhân chính thức dưới đây:</p>
+            
+            <table class="contact-table">
+              <tr>
+                <th>Tên công ty</th>
+                <td><strong>CÔNG TY TNHH PHƯƠNG VIỆT GROUP</strong><br>(PHUONG VIET GROUP COMPANY LIMITED)</td>
+              </tr>
+              <tr>
+                <th>Mã số thuế</th>
+                <td>0401958689</td>
+              </tr>
+              <tr>
+                <th>Địa chỉ trụ sở chính</th>
+                <td>242/17 Điện Biên Phủ, Phường Chính Gián, Quận Thanh Khê, TP. Đà Nẵng, Việt Nam</td>
+              </tr>
+              <tr>
+                <th>Email hỗ trợ</th>
+                <td><a href="mailto:pvgroup79@gmail.com">pvgroup79@gmail.com</a></td>
+              </tr>
+              <tr>
+                <th>Hotline tư vấn</th>
+                <td>(0236) 3771 789 / 0924 711 789</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- ENGLISH CONTENT -->
+          <div id="content-en" class="lang-content">
+            <div class="meta-info">
+              <span><i class="fa-solid fa-calendar-days"></i> Last Updated: August 23, 2026</span>
+              <span><i class="fa-solid fa-shield-halved"></i> Status: Effective</span>
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p><strong>PHUONG VIET GROUP COMPANY LIMITED</strong> ("we", "us", "our", or "Phuong Viet Group") is committed to protecting the privacy and personal information of our users when using our website, mobile applications, and cold chain services. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal data, and details your rights regarding your own data in full compliance with the Google Play Console organization verification standards and user data policies.</p>
+            <p>By installing our mobile application or utilizing our services, you consent to the data practices described in this Privacy Policy.</p>
+
+            <h2>2. Information Collection and Use</h2>
+            <p>We may collect the following categories of information to maintain, improve, and deliver better services to our users:</p>
+            <ul>
+              <li><strong>Information Provided by Users:</strong> When you request quotes, sign up for wholesale distribution, or contact us through our website or application form, we may ask you to provide direct contact information including: Full Name, Mobile Phone Number, Email Address, and details of your business inquiry (e.g., requests for dry ice, gel ice, or dry ice cleaning equipment).</li>
+              <li><strong>Device & Usage Data (Automatically Collected):</strong> When you run our mobile application, our system may automatically capture technical, non-personally identifiable information, including:
+                <ul>
+                  <li>Device model and hardware specifications.</li>
+                  <li>Operating system version (OS version).</li>
+                  <li>Internet Protocol (IP) address.</li>
+                  <li>Google Advertising ID (AAID) used for analytics or promotional display optimization.</li>
+                  <li>Application crash logs and stability metrics used solely for debugging and performance enhancements.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h2>3. Third-Party Service Providers</h2>
+            <p>We may collaborate with third-party service providers to facilitate our application operations and analyze services on our behalf. These third parties have access to your device information only to perform specific technical tasks and are obligated not to disclose or use it for any other purpose. Links to the privacy policies of our primary partners are provided below:</p>
+            <ul>
+              <li><strong>Google Play Services:</strong> Used to support standard Android functionality. <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google Play Services Privacy Policy</a></li>
+              <li><strong>AdMob:</strong> Used to serve relevant advertising content inside the application. <br><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">View AdMob Privacy Policy</a></li>
+              <li><strong>Google Analytics for Firebase / Firebase Crashlytics:</strong> Used to monitor application performance and automatically track errors. <br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">View Firebase Privacy Policy</a></li>
+            </ul>
+
+            <h2>4. Log Data & Cookies</h2>
+            <p><strong>Log Data:</strong> We want to inform you that whenever you use our service, in case of an error in the app, we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our service, the time and date of your use of the service, and other statistics.</p>
+            <p><strong>Cookies:</strong> Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory. Our applications do not use these cookies explicitly. However, the app may use third-party code and libraries that use "cookies" to collect information and improve their services.</p>
+
+            <h2>5. Data Deletion Policy</h2>
+            <p>To comply with Google Play Store policies and protect user data ownership, we provide a transparent and straightforward personal data deletion policy:</p>
+            <ul>
+              <li>If you wish to request the complete deletion of your personal details (such as name, phone number, email) or device identifier data collected while using our apps or services, please submit a written request to our official support email: <a href="mailto:pvgroup79@gmail.com"><strong>pvgroup79@gmail.com</strong></a>.</li>
+              <li>Upon receiving your request and verifying your account identity, we commit to deleting your records from our servers and providing a confirmation response to you <strong>within a maximum of 30 days</strong>.</li>
+            </ul>
+
+            <h2>6. Children’s Privacy</h2>
+            <p>We comply with the Children's Online Privacy Protection Act (COPPA). Our services are not directed to children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we will immediately delete this data from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us immediately so we can execute the necessary safety procedures.</p>
+
+            <h2>7. Security & Retention</h2>
+            <p>We value your trust in providing us with your information. Thus, we strive to use commercially acceptable means of protecting it, including encryption protocols and access-controlled servers. However, please remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any modifications. We will notify you of any changes by posting the revised policy on this page, and such changes will take effect immediately upon posting.</p>
+
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, or to exercise your data protection rights, do not hesitate to contact us using our corporate registration details:</p>
+
+            <table class="contact-table">
+              <tr>
+                <th>Company Name</th>
+                <td><strong>PHUONG VIET GROUP COMPANY LIMITED</strong><br>(CÔNG TY TNHH PHƯƠNG VIỆT GROUP)</td>
+              </tr>
+              <tr>
+                <th>Tax Code</th>
+                <td>0401958689</td>
+              </tr>
+              <tr>
+                <th>Headquarters Address</th>
+                <td>242/17 Dien Bien Phu, Chinh Gian Ward, Thanh Khe District, Da Nang City, Vietnam</td>
+              </tr>
+              <tr>
+                <th>Support Email</th>
+                <td><a href="mailto:pvgroup79@gmail.com">pvgroup79@gmail.com</a></td>
+              </tr>
+              <tr>
+                <th>Customer Helpline</th>
+                <td>(0236) 3771 789 / 0924 711 789</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="color: #fff; margin-bottom: 20px;">
+            <div class="logo-container">
+              <img src="https://logo.trangvangvietnam.com/L39577145700.gif" alt="Phương Việt Group Logo">
+            </div>
+            PHƯƠNG VIỆT <span>GROUP</span>
+          </a>
+          <p style="font-size: 0.9rem; margin-bottom: 24px; line-height: 1.7;">
+            Công Ty TNHH Phương Việt Group - Đơn vị sản xuất và cung ứng các sản phẩm làm lạnh công nghiệp từ CO2 tinh khiết hàng đầu Việt Nam. Chất lượng tối ưu, đảm bảo không đứt chuỗi cung ứng lạnh.
+          </p>
+          <div class="top-social">
+            <a href="https://www.facebook.com/pvgroup/" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff;"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://zalo.me/0924711789" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff;"><i class="fa-solid fa-comment-dots"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Liên kết nhanh</h5>
+          <ul>
+            <li><a href="index.html#about">Về Phương Việt</a></li>
+            <li><a href="index.html#products">Sản phẩm phân phối</a></li>
+            <li><a href="index.html#solutions">Ứng dụng giải pháp</a></li>
+            <li><a href="index.html#why-us">Thế mạnh cạnh tranh</a></li>
+            <li><a href="index.html#contact">Hệ thống chi nhánh</a></li>
+            <li><a href="privacy-policy.html">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sản phẩm chủ lực</h5>
+          <ul>
+            <li><a href="index.html#products">Túi đá gel 500g</a></li>
+            <li><a href="index.html#products">Đá gel hộp nhựa 600g</a></li>
+            <li><a href="index.html#products">Đá khô CO2 Block</a></li>
+            <li><a href="index.html#products">Đá sợi pellets 3mm</a></li>
+            <li><a href="index.html#products">Máy phun đá khô CO2</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Đăng ký nhận bảng giá</h5>
+          <p style="font-size: 0.85rem; margin-bottom: 15px; line-height: 1.6;">Nhận cập nhật bảng giá sỉ và các đợt khuyến mãi đại lý định kỳ từ Phương Việt.</p>
+          <form onsubmit="event.preventDefault(); alert('Cảm ơn! Email của bạn đã được đăng ký.');" style="display: flex; gap: 8px;">
+            <input type="email" placeholder="Email của bạn..." style="padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: #fff; width: 100%; font-size: 0.85rem;" required>
+            <button class="btn btn-primary" style="padding: 10px 16px;"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bản quyền thuộc về CÔNG TY TNHH PHƯƠNG VIỆT GROUP. Bảo lưu mọi quyền. Tax Code: 0401958689</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Desktop Premium Contact Widget (Floating) -->
+  <div class="contact-widget-container">
+    <a href="https://zalo.me/0924711789" target="_blank" class="widget-btn zalo" aria-label="Chat Zalo">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span>Chat Zalo ngay</span>
+    </a>
+    <a href="tel:0924711789" class="widget-btn phone" aria-label="Gọi điện thoại">
+      <i class="fa-solid fa-phone"></i>
+      <span>Gọi hotline tư vấn</span>
+    </a>
+  </div>
+
+  <!-- Mobile Premium Contact Sticky Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:0924711789" class="mobile-bottom-btn phone-btn">
+      <i class="fa-solid fa-phone-volume"></i>
+      <span>Gọi ngay</span>
+    </a>
+    <a href="https://zalo.me/0924711789" target="_blank" class="mobile-bottom-btn zalo-btn">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span>Zalo sỉ lẻ</span>
+    </a>
+    <a href="index.html#contact" class="mobile-bottom-btn">
+      <i class="fa-solid fa-envelope-open-text"></i>
+      <span>Báo giá</span>
+    </a>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking on navigation link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Header scroll background change
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('mainHeader');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Language switcher logic
+    function switchLanguage(lang) {
+      // Toggle button states
+      const buttons = document.querySelectorAll('.lang-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      const contents = document.querySelectorAll('.lang-content');
+      contents.forEach(c => c.classList.remove('active'));
+      
+      if(lang === 'vi') {
+        buttons[0].classList.add('active');
+        document.getElementById('content-vi').classList.add('active');
+        document.getElementById('privacyTitle').innerHTML = 'Chính Sách <span>Bảo Mật</span>';
+        document.getElementById('privacySubtitle').innerText = 'Privacy Policy - Phuong Viet Group';
+        document.title = 'Chính Sách Bảo Mật (Privacy Policy) - Phương Việt Group';
+      } else {
+        buttons[1].classList.add('active');
+        document.getElementById('content-en').classList.add('active');
+        document.getElementById('privacyTitle').innerHTML = 'Privacy <span>Policy</span>';
+        document.getElementById('privacySubtitle').innerText = 'Chính Sách Bảo Mật - Phương Việt Group';
+        document.title = 'Privacy Policy (Chính Sách Bảo Mật) - Phuong Viet Group';
+      }
+    }
+  </script>
+</body>
+</html>
