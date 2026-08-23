@@ -1691,43 +1691,30 @@
       <div class="section-title-wrap reveal">
         <span class="badge"><i class="fa-solid fa-phone-volume"></i> Liên hệ báo giá</span>
         <h2 class="section-title">Nhận Tư Vấn & <span>Báo Giá Đại Lý</span></h2>
-        <p class="section-desc">Gửi thông tin nhu cầu của quý đại lý hoặc nhà máy để nhận bảng giá đá khô, đá gel ưu đãi nhất.</p>
+        <p class="section-desc">Liên hệ trực tiếp qua Hotline hoặc Zalo của Phương Việt Group để nhận bảng báo giá sỉ lẻ đá khô, đá gel ưu đãi nhất.</p>
       </div>
 
       <div class="contact-grid">
-        <!-- Contact Form Box -->
-        <div class="contact-form-box reveal">
-          <h3>Gửi Yêu Cầu Cho Phương Việt</h3>
-          <form id="quoteForm" onsubmit="handleFormSubmit(event)">
-            <div class="form-group">
-              <label>Họ và tên người liên hệ *</label>
-              <input type="text" id="contactName" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required>
-            </div>
-            <div class="form-group">
-              <label>Số điện thoại di động *</label>
-              <input type="tel" id="contactPhone" class="form-control" placeholder="Ví dụ: 0924 711 789" required>
-            </div>
-            <div class="form-group">
-              <label>Sản phẩm cần tư vấn *</label>
-              <select id="contactProduct" class="form-control" required>
-                <option value="">-- Chọn sản phẩm --</option>
-                <option value="Đá gel hộp nhựa 600g">Đá gel hộp nhựa cứng 600g</option>
-                <option value="Túi đá gel PE 500g">Túi đá gel PE 500g</option>
-                <option value="Túi đá gel PE 400g">Túi đá gel PE 400g</option>
-                <option value="Đá khô dạng block">Đá khô dạng block (khối)</option>
-                <option value="Đá khô dạng sợi pellets">Đá khô dạng sợi (pellets)</option>
-                <option value="Máy phun đá khô và phụ kiện">Máy phun đá khô và phụ kiện</option>
-                <option value="Khí công nghiệp khác">Khí CO2 lỏng, Argon, Oxy...</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Nội dung yêu cầu / Số lượng ước tính</label>
-              <textarea id="contactMessage" rows="4" class="form-control" placeholder="Mô tả nhu cầu mua lẻ, mua đại lý định kỳ hoặc giao hàng tại khu vực nào..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;">
-              <i class="fa-solid fa-paper-plane"></i> Gửi Yêu Cầu Ngay
-            </button>
-          </form>
+        <!-- Direct Phone & Zalo Buttons (Replaces Form Box) -->
+        <div class="contact-form-box reveal" style="display: flex; flex-direction: column; justify-content: center; gap: 30px; background: #ffffff;">
+          <div>
+            <h3 style="margin-bottom: 10px; font-size: 1.6rem; color: var(--secondary);">Liên Hệ Trực Tiếp</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Quý khách hàng, đại lý hoặc doanh nghiệp có thể gọi trực tiếp hoặc gửi tin nhắn qua Zalo để nhận báo giá sỉ lẻ tốt nhất trong vòng 5 phút.</p>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <a href="tel:0924711789" class="btn btn-primary" style="padding: 16px 24px; font-size: 1.05rem; display: flex; justify-content: center; align-items: center; gap: 12px; border-radius: 14px;">
+              <i class="fa-solid fa-phone-volume" style="font-size: 1.25rem;"></i> Gọi Hotline: 0924.711.789
+            </a>
+            
+            <a href="https://zalo.me/0924711789" target="_blank" class="btn btn-accent" style="padding: 16px 24px; font-size: 1.05rem; display: flex; justify-content: center; align-items: center; gap: 12px; border-radius: 14px; background: linear-gradient(135deg, #0068ff 0%, #3b82f6 100%); box-shadow: 0 8px 20px -4px rgba(59, 130, 246, 0.35);">
+              <i class="fa-solid fa-comment-dots" style="font-size: 1.25rem;"></i> Chat Zalo Nhận Báo Giá
+            </a>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 20px; font-size: 0.88rem; color: var(--text-muted); text-align: center;">
+            <p><i class="fa-solid fa-clock" style="color: var(--accent); margin-right: 6px;"></i> Hỗ trợ tư vấn liên tục 24/7 (Kể cả ngày lễ & Chủ nhật)</p>
+          </div>
         </div>
 
         <!-- Branches Details -->
@@ -1786,6 +1773,7 @@
             <li><a href="#solutions">Ứng dụng giải pháp</a></li>
             <li><a href="#why-us">Thế mạnh cạnh tranh</a></li>
             <li><a href="#contact">Hệ thống chi nhánh</a></li>
+            <li><a href="privacy-policy.html">Chính sách bảo mật</a></li>
           </ul>
         </div>
 
@@ -1941,33 +1929,8 @@
 
     // Direct product CTA contact binding
     function openContactWithProduct(productName) {
-      // Auto fill product field in contact form
-      const productSelect = document.getElementById('contactProduct');
-      for (let i = 0; i < productSelect.options.length; i++) {
-        if (productSelect.options[i].value === productName || productSelect.options[i].text.includes(productName)) {
-          productSelect.selectedIndex = i;
-          break;
-        }
-      }
-      
-      // Auto write message suggestion
-      document.getElementById('contactMessage').value = `Tôi muốn đăng ký nhận bảng giá đại lý của sản phẩm: ${productName}. Vui lòng liên hệ lại cho tôi.`;
-      
-      // Scroll to form smoothly
+      // Scroll to contact section smoothly
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Handle quote request submit
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      const name = document.getElementById('contactName').value;
-      const phone = document.getElementById('contactPhone').value;
-      const product = document.getElementById('contactProduct').value;
-      
-      alert(`Gửi yêu cầu thành công!\nCảm ơn anh/chị ${name}. Phương Việt Group sẽ liên hệ tư vấn báo giá sản phẩm "${product}" qua số điện thoại ${phone} trong vòng 15 phút.`);
-      
-      // Reset form
-      document.getElementById('quoteForm').reset();
     }
   </script>
 </body>
