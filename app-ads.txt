@@ -1,9 +1,10 @@
 google.com, pub-3018248494561226, DIRECT, f08c47fec0942fa0
 google.com, pub-6504967451989730, DIRECT, f08c47fec0942fa0
 facebook.com, 1319359010311671, DIRECT, c3e20eee3f780d68
-vungle.com, 6ad4502c56c1b4e3f25907a1, DIRECT, c107d686becd2d77
 
 pangleglobal.com, 5040955, DIRECT
+applovin.com, 9b7ebb0dff192127cd5f6af4b340eac1, DIRECT
+vungle.com, 6ad4502c56c1b4e3f25907a1, DIRECT, c107d686becd2d77
 33across.com,001Pg0000197KcKIAU,RESELLER,bbea06d9c4d2853c
 contextweb.com,562852,RESELLER,89ff185a4c4e857c
 media.net,8CU12AQ1Y,RESELLER
@@ -367,24 +368,3 @@ video.unrulymedia.com,689559416,RESELLER
 video.unrulymedia.com,906352066,RESELLER
 video.unrulymedia.com,947824792,RESELLER
 videoheroes.tv,212428,RESELLER,064bc410192443d8
-videoheroes.tv,212450,RESELLER,064bc410192443d8
-visiblemeasures.com,1004,RESELLER
-visiblemeasures.com,1090,RESELLER
-xandr.com,13293,RESELLER,f5ab79cb980f11d1
-xandr.com,13297,RESELLER,f5ab79cb980f11d1
-xandr.com,13799,RESELLER
-xandr.com,15426,RESELLER,f5ab79cb980f11d1
-xandr.com,15840,RESELLER
-xandr.com,17417,RESELLER,f5ab79cb980f11d1
-yeahmobi.com,114122,RESELLER
-yeahmobi.com,5135302,RESELLER
-yieldmo.com,2754490424016969782,RESELLER
-yieldmo.com,3591550211052216798,RESELLER,6a92c77cfc3d2258
-yieldmo.com,3761877318507634863,RESELLER,6a92c77cfc3d2258
-zetaglobal.com,815,RESELLER
-zetaglobal.net,815,RESELLER
-zmaticoo.com,114490,RESELLER
-zmaticoo.com,5135063,RESELLER
-zmaticoo.com,5135224,RESELLER
-zmaticoo.com,5135302,RESELLER
-zoomd.com,88478941,RESELLER
